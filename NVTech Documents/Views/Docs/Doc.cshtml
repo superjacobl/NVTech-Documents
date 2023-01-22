@@ -1,0 +1,8 @@
+﻿@using NVTech_Documents.Markdig
+@model NVTech_Documents.Models.Document
+
+@{
+    ViewData["Title"] = "Doc";
+}
+
+@MarkdownManager.GetHtml(Model.Content);
